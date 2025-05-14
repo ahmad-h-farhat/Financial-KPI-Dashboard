@@ -37,7 +37,7 @@ This project solves that by building a clean ETL pipeline to transform raw trans
 ## 📁 Folder Structure
 
 ```text
-etl_finance/
+Financial-KPI-Dashboard/
 ├── data/                      # Raw source data
 │   └── transactions.csv
 │
