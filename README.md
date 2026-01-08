@@ -1,5 +1,22 @@
 # 💼 Financial KPI Dashboard – SQL & Tableau 
 
+## TL;DR
+SQL (DuckDB) ETL + KPI analytics pipeline with Excel + Tableau dashboard outputs (screenshots + files included).
+
+## Artifacts (open these first)
+- Excel dashboard file: `docs/etl_finance_dashboard.xlsx`
+- Excel dashboard preview (PNG): `docs/dashboard_preview.png`
+- Tableau dashboard preview (PNG): `docs/Tableau_Dashboard_Preview.png`
+- Tableau workbook: `docs/Book1.twb`
+
+## How to view in 60 seconds
+1. Open the PNG previews in `/docs`.
+2. Download and open `docs/etl_finance_dashboard.xlsx`.
+3. Open `docs/Book1.twb` in Tableau to view the Tableau version.
+
+## Quick run (optional)
+- Run ETL scripts in `/etl` then KPI queries in `/kpi_analytics` using DuckDB.
+
 This project simulates a real-world ETL pipeline and KPI analytics workflow for a financial firm managing global client transactions. The project was built entirely using SQL (DuckDB) for ETL, KPI calculation, and Excel for dashboard visualization.
 
 ---
