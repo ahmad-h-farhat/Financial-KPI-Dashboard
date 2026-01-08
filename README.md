@@ -1,7 +1,7 @@
 # 💼 Financial KPI Dashboard – SQL & Tableau 
 
 ## TL;DR
-SQL (DuckDB) ETL + KPI analytics pipeline with Excel + Tableau dashboard outputs (screenshots + files included).
+End-to-end ETL + KPI analytics workflow using **DuckDB (SQL)** with **Excel** and **Tableau** dashboard outputs (screenshots + files included).
 
 ## Artifacts (open these first)
 - Excel dashboard file: `docs/etl_finance_dashboard.xlsx`
@@ -11,48 +11,45 @@ SQL (DuckDB) ETL + KPI analytics pipeline with Excel + Tableau dashboard outputs
 
 ## How to view in 60 seconds
 1. Open the PNG previews in `/docs`.
-2. Download and open `docs/etl_finance_dashboard.xlsx`.
-3. Open `docs/Book1.twb` in Tableau to view the Tableau version.
+2. Open `docs/etl_finance_dashboard.xlsx` (Excel dashboard).
+3. Open `docs/Book1.twb` in Tableau (Tableau dashboard version).
 
 ## Quick run (optional)
-- Run ETL scripts in `/etl` then KPI queries in `/kpi_analytics` using DuckDB.
+1. Install DuckDB.
+2. Run SQL scripts in `/etl` (load → clean → SCD).
+3. Run KPI queries in `/kpi_analytics` and validate results against the dashboard outputs in `/docs`.
 
-This project simulates a real-world ETL pipeline and KPI analytics workflow for a financial firm managing global client transactions. The project was built entirely using SQL (DuckDB) for ETL, KPI calculation, and Excel for dashboard visualization.
+This project simulates a real-world ETL pipeline and KPI analytics workflow for a financial firm managing global client transactions. It uses SQL (DuckDB) for ETL + KPI calculation and produces dashboard-ready outputs in Excel and Tableau.
 
 ---
 
 ## 🧠 Business Context
+A financial company handles high-volume transactions from international clients across multiple currencies. Management needs reliable KPIs to track revenue, client activity, and portfolio distribution — but raw data is messy, inconsistent, and non-standardized.
 
-A financial company handles hundreds of daily transactions from international clients across different currencies. Management needs reliable KPIs to track revenue, client activity, and portfolio distribution — but raw data is messy, inconsistent, and non-standardized.
-
-This project solves that by building a clean ETL pipeline to transform raw transaction data into a powerful source of business insight.
+This project addresses that by building a clean ETL pipeline that transforms raw transaction data into analysis-ready tables and KPI outputs.
 
 ---
 
 ## 🚀 Solution Overview
 
-### ETL Pipeline Flow:
-
+### ETL Pipeline Flow
 1. Load raw data from CSV  
-2. Clean & standardize the data (currency conversion, date formatting, removing duplicates)  
+2. Clean & standardize (currency conversion, date formatting, duplicate handling)  
 3. Apply Slowly Changing Dimensions (SCD) to track client profile changes  
-4. Generate KPIs using clean analytical tables  
-5. Visualize results in Excel and Tableau dashboard  
+4. Generate KPIs using analytical tables  
+5. Visualize results in Excel + Tableau  
 
 ---
 
 ## 🛠️ Tech Stack
-
-- SQL (DuckDB style)  
-- DuckDB  
-- Excel (Online) for dashboard visualization
-- Tableau  
-- GitHub for version control & project showcasing  
+- DuckDB (SQL)
+- Excel (dashboard visualization)
+- Tableau (dashboard visualization)
+- GitHub (version control)
 
 ---
 
 ## 📁 Folder Structure
-
 ```text
 Financial-KPI-Dashboard/
 ├── data/                      # Raw source data
@@ -78,6 +75,7 @@ Financial-KPI-Dashboard/
 │   └── Book1.twb
 │
 └── README.md
+
 ```
 ---
 
